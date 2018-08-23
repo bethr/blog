@@ -1,7 +1,8 @@
 class Post < ApplicationRecord
-   attr_accessible :boy, :title
+   attr_accessor :body, :title
    has_many :comments
    validates_presence_of :body, :title
-   
-   
+
 end
+
+ 
